@@ -31,10 +31,3 @@ jobs:
       - name: Deploy Docs
         run: mkdocs gh-deploy --force
 
-**Step 3: Push and Configure**
-1. Commit and push this `.github` folder to your repository.
-2. The Action will automatically run (you can watch it in the **Actions** tab on GitHub).
-3. Once it finishes, go to **Settings** > **Pages**.
-4. Set the **Source** to **Deploy from a branch** and select the `gh-pages` branch as your source. 
-
-Your documentation is now live and will automatically update whenever you push new changes to your markdown files!
