@@ -1,0 +1,80 @@
+site_name: Enigma Game Framework
+site_description: Official documentation for the Enigma game framework, a C# framework for creating simple games 
+site_author: MTA
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    # Light mode
+    - scheme: default
+      primary: blue grey
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      primary: blue grey
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - markdown_katex
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Home: index.md
+  
+  - Getting Started:
+    - Installation: getting-started/installation.md
+    - Building from Source: getting-started/build-source.md
+    - Quick Start Guide: getting-started/quickstart.md
+    
+  - Core Architecture:
+    - Math Library: core/math.md
+    - Engine Overview: core/architecture.md
+    - Entity Component System: core/ecs.md
+    - Service Locator: core/service-locator.md
+    
+  - Physics Systems:
+    - Overview and setting: systems/physics.md
+    - Collision: systems/collision.md
+    - Rigidbody: systems/rigidbody.md
+  
+  - Graphics:
+    - Overview:
+    - Camera:
+    - Shpaes:
+    - Sprite:
+    - Text:
+    
+  - Scripting:
+    - Scripting Overview: scripting/overview.md
+    - C# Scripting API: scripting/csharp-scripting.md # Changed from Lua/C++
+    
+  - Editor & Tools:
+    - Editor Interface: editor/interface.md
+    - Asset Pipeline: editor/asset-pipeline.md
+    
+  - API Reference: api/reference.md
